@@ -1,27 +1,196 @@
 *{
+    border: 0px;
+    margin: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+
 }
 body{
     background-image:url(fondo.png);
     background-size: cover;
     background-position: center;
     text-align: center;
+    background-color: rgb(39, 35, 35);
+    
 }
 .container{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    z-index: 1;
+    height: 300px;
+    position: absolute;
+    margin-top: 1em;
+}
+.fondo-intro{
+    z-index: -1;
+    height: 300px;
+    background-color: red;
+    opacity: 0.5;
+    margin-top: 1em;
+}
+.name{
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.name h2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: xx-large;
+}
+.name p{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: large;
+}
+.image-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.skill, .edu, .extra{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5em;
+    color: white;
+    margin-left: 1em;
+}
+.skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+  
+}
+.sk1, .sk2, .sk3, .sk4, .sk5, .sk6{
+    background-color:white;
+    border-radius: 10%;
+}
+
+.skills img{
+    width: 100%;
+    height: 280px;
+}
+.container2{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    margin-top: 10px;
+    z-index: 1;
+    height: 300px;
+    color: white;
+}
+.container2 img{
+    height: 180px;
+    width: 90%;
+    border-radius: 5px;
+}
+.container2 h5{
+    font-size:medium;
+}
+
+.escuela{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 2%;
-    margin-bottom: 2em;
 }
-
-.carousel-inner img{
-    width: 80%;
-    height: 450px;
-    margin-left: 10%;
-    margin-right: 10%;
-    border-radius: 5em;
-
+.fondo-escuelas{
+   
+    height: 300px;
+    background-color: black;
+    z-index: -2;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.school{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    margin-top: -300px;
+}
+.school-1{
+background-color: #1c307b;
+height: 300px;
+z-index: -1;
+opacity: 0.7;
+border-radius: 5px;
+}
+.school-2{
+    background-color: #98392f;
+    height: 300px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.school-3{
+    background-color: #e9c82a;
+    height: 300px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.school-4{
+    background-color: #005e35;
+    height: 300px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.school-5{
+    background-color: #c5a2ff;
+    height: 300px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.extras{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 5em;
+}
+.mario,.fall{
+    display: inline-flex;
+ 
+}
+.cuphead, .party, .gta{
+    display: inline-flex;
+}
+.gang, .rocket, .genshin{
+    display: inline-flex;
+}
+.games img{
+    width: 100%;
+    height: 150px;
+}
+.games{
+    background-color: black;
+}
+.text-game{
+    background-color: white;
+}
+.text-music{
+    background-color: black;
+    color: white;
+}
+.music{
+    background-color: white;
+}
+.get, .asking, .motionless{
+    display: inline-flex;
+}
+.palaye, .bmth{
+    display: inline-flex;
+}
+.bvb, .fir{
+    display: inline-flex;
+}
+.music img{
+    width: 100%;
+    height: 150px;
 }
